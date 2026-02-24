@@ -114,3 +114,30 @@ git merge nom_de_la_branche
 # Rebaser pour une histoire linéaire
 git rebase nom_de_la_branche
 ```
+
+## Résoudre les conflits
+
+En cas de conflits lors d'une fusion :
+
+1. Ouvrez les fichiers en conflit
+2. Modifiez-les pour résoudre les conflits (supprimez les marqueurs `<<<<<<<`, `=======`, `>>>>>>>`)
+3. Ajoutez les fichiers résolus : `git add fichier_en_conflit`
+4. Commitez : `git commit`
+
+## Annuler des changements
+
+Pour annuler des modifications :
+
+```bash
+# Annuler les changements dans un fichier (revenir à la dernière version committée)
+git checkout -- nom_du_fichier
+
+# Annuler le dernier commit (garder les changements)
+git reset --soft HEAD~1
+
+# Annuler le dernier commit (supprimer les changements)
+git reset --hard HEAD~1
+
+# Annuler un commit spécifique et tous les suivants
+git reset --hard commit_hash
+```
