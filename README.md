@@ -141,3 +141,25 @@ git reset --hard HEAD~1
 # Annuler un commit spécifique et tous les suivants
 git reset --hard commit_hash
 ```
+## Autres commandes utiles
+
+```bash
+# Cloner un dépôt existant
+git clone https://github.com/utilisateur/repo.git
+
+# Voir les commits d'un auteur spécifique
+git log --author="Nom de l'auteur"
+
+# Créer un tag pour une version
+git tag v1.0
+
+# Pousser les tags
+git push --tags
+
+# Ignorer des fichiers avec .gitignore
+echo "nom_du_fichier" >> .gitignore
+```
+
+## Conclusion
+
+Git est un outil puissant pour la gestion de versions. Pratiquez ces commandes régulièrement pour les maîtriser. Pour plus d'informations, consultez la [documentation officielle de Git](https://git-scm.com/doc).
