@@ -58,3 +58,27 @@ git commit -m "Message descriptif du commit"
 # Commiter en incluant tous les fichiers modifiés (sans git add préalable)
 git commit -a -m "Message du commit"
 ```
+
+## Pousser vers le dépôt distant
+
+Envoyez vos commits vers GitHub :
+
+```bash
+# Pousser la branche principale
+git push origin main
+
+# Pousser une branche spécifique
+git push origin nom_de_la_branche
+```
+
+## Tirer les changements
+
+Récupérez les changements du dépôt distant :
+
+```bash
+# Tirer et fusionner les changements
+git pull origin main
+
+# Tirer sans fusionner (fetch seulement)
+git fetch origin
+```
