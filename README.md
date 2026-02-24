@@ -82,3 +82,35 @@ git pull origin main
 # Tirer sans fusionner (fetch seulement)
 git fetch origin
 ```
+## Travailler avec les branches
+
+Les branches permettent de travailler sur des fonctionnalités séparément :
+
+```bash
+# Voir toutes les branches
+git branch
+
+# Créer une nouvelle branche
+git branch nom_de_la_branche
+
+# Basculer vers une branche
+git checkout nom_de_la_branche
+
+# Créer et basculer vers une nouvelle branche en une commande
+git checkout -b nom_de_la_branche
+
+# Supprimer une branche locale
+git branch -d nom_de_la_branche
+```
+
+## Fusionner des branches
+
+Intégrez les changements d'une branche dans une autre :
+
+```bash
+# Fusionner une branche dans la branche actuelle
+git merge nom_de_la_branche
+
+# Rebaser pour une histoire linéaire
+git rebase nom_de_la_branche
+```
