@@ -115,7 +115,7 @@ git merge nom_de_la_branche
 git rebase nom_de_la_branche
 ```
 
-## Résoudre les conflits
+## Résolutions des conflits
 
 En cas de conflits lors d'une fusion :
 
